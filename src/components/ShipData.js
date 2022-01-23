@@ -20,7 +20,18 @@ const ShipData = () => {
 
     useEffect(() => fetchShip)
     return (
-        <div>
+        <div className='container'>
+            {
+                ships.map((ship) =>{
+                    return(
+                        <div className='card' key={ship?.name}>
+                            <h3>{ship.name}</h3>
+                            <h4>{ship.model}</h4>
+                            <h5>{ship.manufacturer}</h5>
+                            </div>
+                    )
+                })
+            }
 
         </div>
     );
