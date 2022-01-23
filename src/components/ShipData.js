@@ -7,7 +7,7 @@ const ShipData = () => {
     const fetchShip = async () => {
 
         try {
-
+            // Research documentation of SWAPI to find the endpoint for the starships resource
             const response = await axios.get('https://swapi.dev/api/starships')
             setships(response.data.results)
             console.log(ships)
