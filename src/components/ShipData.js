@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-
+import '../App.css'
 
 const ShipData = () => {
     const [ships, setships] = useState([])
@@ -26,11 +26,11 @@ const ShipData = () => {
                     return (
                         // https://getbootstrap.com/docs/5.1/components/card/
                         <div className='card' style="width: 18rem;" key={ship?.name}>
-                            <div class="card-body">
-                            <h3 class="card-title"> Name: {ship.name}</h3>
-                            <p class="card-text"> Model: {ship.model}</p>
-                            <p class="card-text"> Manufacturer: {ship.manufacturer}</p>
-                        </div>
+                            <div className="card-body">
+                                <h3 className="card-title"> Name: {ship.name}</h3>
+                                <p className="card-text"> Model: {ship.model}</p>
+                                <p className="card-text"> Manufacturer: {ship.manufacturer}</p>
+                            </div>
                         </div>
                     )
                 })
