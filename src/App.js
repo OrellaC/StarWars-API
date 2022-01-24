@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
 import ShipData from './components/ShipData';
 
-const App = () => {
+function App () {
   return (
     <div>
-      < ShipData />
+      <Routes>
+        <Route path='shipdata' element={<ShipData />} />
+      </Routes>
 
       
     </div>

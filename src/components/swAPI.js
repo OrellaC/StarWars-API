@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-const Swapi = () => {
-    return (
-        <div>
+// const Swapi = () => {
+//     return (
+//         <div>
             
-        </div>
-    );
-}
+//         </div>
+//     );
+// }
 
-export default Swapi;
+// export default Swapi;
