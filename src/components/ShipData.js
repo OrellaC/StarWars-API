@@ -22,13 +22,23 @@ const ShipData = () => {
     return (
         <div className='container'>
             {
-                ships.map((ship) =>{
-                    return(
+                ships.map((ship) => {
+                    return (
                         <div className='card' key={ship?.name}>
                             <h3>{ship.name}</h3>
                             <h4>{ship.model}</h4>
                             <h5>{ship.manufacturer}</h5>
-                            </div>
+                        </div>
+
+                        //         <div className="card" style={{ width: '18rem' }}>
+                        // <img src={props.item.links?.[0].href} className="card-img-top" alt="..." />
+                        // <div className="card-body  overflow-auto" style={{ height: '18rem' }}>
+                        //     <h5 className="card-title">{props.item.data[0].title}</h5>
+                        //     <p className="card-text">TESTING</p>  
+                        //     <p>Location: {props.item.data[0].location}</p>
+                        //     <p>Created: {props.item.data[0].date_created}</p>
+                        //     <a href="#" className="btn btn-primary">Description</a>
+                        // </div>
                     )
                 })
             }
