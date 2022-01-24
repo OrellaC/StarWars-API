@@ -24,21 +24,14 @@ const ShipData = () => {
             {
                 ships.map((ship) => {
                     return (
-                        <div className='card' key={ship?.name}>
-                            <h3>{ship.name}</h3>
-                            <h4>{ship.model}</h4>
-                            <h5>{ship.manufacturer}</h5>
+                        // https://getbootstrap.com/docs/5.1/components/card/
+                        <div className='card' style="width: 18rem;" key={ship?.name}>
+                            <div class="card-body">
+                            <h3 class="card-title"> Name: {ship.name}</h3>
+                            <p class="card-text"> Model: {ship.model}</p>
+                            <p class="card-text"> Manufacturer: {ship.manufacturer}</p>
                         </div>
-
-                        //         <div className="card" style={{ width: '18rem' }}>
-                        // <img src={props.item.links?.[0].href} className="card-img-top" alt="..." />
-                        // <div className="card-body  overflow-auto" style={{ height: '18rem' }}>
-                        //     <h5 className="card-title">{props.item.data[0].title}</h5>
-                        //     <p className="card-text">TESTING</p>  
-                        //     <p>Location: {props.item.data[0].location}</p>
-                        //     <p>Created: {props.item.data[0].date_created}</p>
-                        //     <a href="#" className="btn btn-primary">Description</a>
-                        // </div>
+                        </div>
                     )
                 })
             }
