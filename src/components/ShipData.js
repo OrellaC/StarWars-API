@@ -18,18 +18,21 @@ const ShipData = () => {
         }
     }
 
-    useEffect(() => fetchShip)
+    useEffect(() => {
+        fetchShip()
+    }, [])
     return (
         <div className='container'>
             {
                 ships.map((ship) => {
                     return (
                         // https://getbootstrap.com/docs/5.1/components/card/
-                        <div className='card' style="width: 18rem;" key={ship?.name}>
+                        <div className='card' style= {{width: "18rem" }} key={ship?.name}>
                             <div className="card-body">
                                 <h3 className="card-title"> Name: {ship.name}</h3>
                                 <p className="card-text"> Model: {ship.model}</p>
                                 <p className="card-text"> Manufacturer: {ship.manufacturer}</p>
+            
                             </div>
                         </div>
                     )
