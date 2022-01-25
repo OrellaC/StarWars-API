@@ -27,11 +27,11 @@ const ShipData = () => {
                 ships.map((ship) => {
                     return (
                         // https://getbootstrap.com/docs/5.1/components/card/
-                        <div className='card' style= {{width: "18rem" }} key={ship?.name}>
-                            <div className="card-body">
+                        <div className="card d-inline-flex p-2 bd-highlight p-3 mb-2 bg-success text-white" style= {{width: "18rem" }} key={ship?.name}>
+                            <div className="card-body overflow-auto" style={{ height: '18rem' }}>
                                 <h3 className="card-title"> Name: {ship.name}</h3>
-                                <p className="card-text"> Model: {ship.model}</p>
-                                <p className="card-text"> Manufacturer: {ship.manufacturer}</p>
+                                <h4 className="card-text"> Model: {ship.model}</h4>
+                                <h4 className="card-text"> Manufacturer: {ship.manufacturer}</h4>
             
                             </div>
                         </div>
